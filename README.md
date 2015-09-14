@@ -27,10 +27,6 @@ The differences from current Job Search is that this one only use for students. 
 - Can search database to select students.
 - Will pay for application and services to get premium access into database.
 
-### For Schools, Colleges, Universities:
-- Review expectations from Student.
-- Review companies' expectations and requirements to update their program to fit them.
-
 ## OPTIONALS:
 ### For Students: 
 - Can share jobs info to their friends through Email, SMS.
@@ -40,6 +36,10 @@ The differences from current Job Search is that this one only use for students. 
 ### For Companies:
 - Payment method for companies: bank card, bank account or cash
 - Currency for payments.
+
+### For Schools, Colleges, Universities:
+- Review expectations from Student.
+- Review companies' expectations and requirements to update their program to fit them.
 
 
 ### Notes:
