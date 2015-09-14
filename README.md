@@ -26,12 +26,12 @@ Companies will post job advertisements on this network, students can check and a
 - Review companies' expectations and requirements to update their program to fit them.
 
 ## OPTIONALS:
-### Students: 
+### For Students: 
 - Can share jobs info to their friends through Email, SMS.
 - Also can set job expectations on their profiles.
 - Can set profiles for private or public.
 
-### Companies:
+### For Companies:
 - Payment method for companies: bank card, bank account or cash
 - Currency for payments.
 
