@@ -10,7 +10,7 @@ Through this network, peole can save money and time for job hunting, head huntin
 The differences from current Job Search is that this one only use for students. So companies need fresh engineers, BA can focus on this network and search for them. PhD or Doctors also can join the networks.
 
 ## App Wireframe: 
-[Job4Students](Basic.png)
+![Job4Students](Mockups/Basic.png)
 
 ## REQUIRED:
 - User can sign up/sign in using email or OAuth loging flow with Google, Facebook or Twitter.
