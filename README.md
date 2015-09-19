@@ -20,12 +20,6 @@ The differences from current Job Search is that this one only use for students. 
 - Application must have push notification when new jobs are posted by companies.
 - Can share jobs info to their friends through Social: Facebook, Twitter, Google+
 
-### For Companies:
-- Must input Business License number to be qualified.
-- Can post jobs.
-- Can post expectations, requirements for students.
-- Can search database to select students.
-- Will pay for application and services to get premium access into database.
 
 ## OPTIONALS:
 ### For Students: 
@@ -36,6 +30,15 @@ The differences from current Job Search is that this one only use for students. 
 ### For Companies:
 - Payment method for companies: bank card, bank account or cash
 - Currency for payments.
+
+
+### For Companies:
+- Must input Business License number to be qualified.
+- Can post jobs.
+- Can post expectations, requirements for students.
+- Can search database to select students.
+- Will pay for application and services to get premium access into database.
+
 
 ### For Schools, Colleges, Universities:
 - Review expectations from Student.
