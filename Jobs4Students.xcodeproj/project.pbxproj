@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27230BC373253819844E8AD9 /* libPods-Jobs4Students.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0EB676C224A398C607EFDF /* libPods-Jobs4Students.a */; };
+		C55C44D81BAF758200BB5D9C /* JobsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C44D71BAF758200BB5D9C /* JobsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C5618E031BAEF4310083ED90 /* ParseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5618E021BAEF4310083ED90 /* ParseInterface.swift */; settings = {ASSET_TAGS = (); }; };
 		C59248FA1BA6C7A300C51658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59248F91BA6C7A300C51658 /* AppDelegate.swift */; };
 		C59248FC1BA6C7A300C51658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59248FB1BA6C7A300C51658 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 		5B0EB676C224A398C607EFDF /* libPods-Jobs4Students.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobs4Students.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		899280228C3654C283C38969 /* Pods-Jobs4Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobs4Students.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jobs4Students/Pods-Jobs4Students.debug.xcconfig"; sourceTree = "<group>"; };
 		C1865C8FFF7FF9EE6991040B /* Pods-Jobs4Students.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobs4Students.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jobs4Students/Pods-Jobs4Students.release.xcconfig"; sourceTree = "<group>"; };
+		C55C44D71BAF758200BB5D9C /* JobsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsListViewController.swift; sourceTree = "<group>"; };
 		C5618E021BAEF4310083ED90 /* ParseInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInterface.swift; sourceTree = "<group>"; };
 		C5618E041BAEF4600083ED90 /* Jobs4Students-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jobs4Students-Bridging-Header.h"; sourceTree = "<group>"; };
 		C59248F61BA6C7A300C51658 /* Jobs4Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobs4Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C55C44D61BAF756500BB5D9C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C55C44D71BAF758200BB5D9C /* JobsListViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		C5618E011BAEF3DF0083ED90 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		C59248F81BA6C7A300C51658 /* Jobs4Students */ = {
 			isa = PBXGroup;
 			children = (
+				C55C44D61BAF756500BB5D9C /* ViewController */,
 				C5618E011BAEF3DF0083ED90 /* Parse */,
 				C59248F91BA6C7A300C51658 /* AppDelegate.swift */,
 				C59248FB1BA6C7A300C51658 /* ViewController.swift */,
@@ -203,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C55C44D81BAF758200BB5D9C /* JobsListViewController.swift in Sources */,
 				C59248FC1BA6C7A300C51658 /* ViewController.swift in Sources */,
 				C59248FA1BA6C7A300C51658 /* AppDelegate.swift in Sources */,
 				C5618E031BAEF4310083ED90 /* ParseInterface.swift in Sources */,

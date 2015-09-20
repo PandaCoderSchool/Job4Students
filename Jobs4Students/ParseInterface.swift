@@ -38,8 +38,26 @@ class ParseInterface: NSObject {
     Parse.setApplicationId(appId, clientKey: clientKey)
   }
   
-  func getJobsInformation() {
+  // Get Jobs Information from Database, return the PFObject array
+  
+  func getJobsInformation() -> [PFObject] {
     
+    var jobsInfo : [PFObject]? = [PFObject]()
+    
+    let query = PFQuery(className: "JobsInformation")
+    
+    query.orderByAscending("createdAt")
+    query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+      if let error = error {
+        let errorStr = error.userInfo["error"] as? String
+        print("Error: \(errorStr) ")
+      } else {
+        jobsInfo = objects!// as! [PFObject]
+        print("Get Job Info")
+        
+      }
+    }
+    return jobsInfo!
   }
   
   func parseSignUp(userName: NSString?, userPass: NSString?) -> Bool{
