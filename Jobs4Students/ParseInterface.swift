@@ -19,6 +19,7 @@ class ParseInterface: NSObject {
   let defaultUserName = "panda"
   let defaultPassword = "panda"
   
+  var jobsInfo : [PFObject]?// = [PFObject]()
   // sharedInstance to be used in other classes
   
   class var sharedInstance: ParseInterface {
@@ -30,6 +31,7 @@ class ParseInterface: NSObject {
   
   override init() {
     super.init()
+    jobsInfo = [PFObject]()
   }
   
   // This will be call in AppDelegate to setup Parse Application
@@ -40,9 +42,7 @@ class ParseInterface: NSObject {
   
   // Get Jobs Information from Database, return the PFObject array
   
-  func getJobsInformation() -> [PFObject] {
-    
-    var jobsInfo : [PFObject]? = [PFObject]()
+  func getJobsInformation() -> [PFObject]? {
     
     let query = PFQuery(className: "JobsInformation")
     
@@ -51,13 +51,14 @@ class ParseInterface: NSObject {
       if let error = error {
         let errorStr = error.userInfo["error"] as? String
         print("Error: \(errorStr) ")
+        self.jobsInfo = nil
       } else {
-        jobsInfo = objects!// as! [PFObject]
-        print("Get Job Info")
-        
+        self.jobsInfo = objects
+//        let jobTitle = self.jobsInfo![0]["jobTitle"] as! String
+//        print(">> Get Job Title: \(jobTitle), No. of Jobs: \(self.jobsInfo!.count)")
       }
     }
-    return jobsInfo!
+    return jobsInfo
   }
   
   func parseSignUp(userName: NSString?, userPass: NSString?) -> Bool{
