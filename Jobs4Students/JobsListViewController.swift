@@ -34,8 +34,7 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
   func fetchJobsInformation() {
     jobsList = ParseInterface.sharedInstance.getJobsInformation()
     jobsTableView.reloadData()
-    if jobsList?.count > 0 {
-    }
+    
   }
   
   // MARK: - TableView Delegate
