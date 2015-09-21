@@ -1,0 +1,69 @@
+{ "results": [
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            }
+        },
+        "companyName": "Công ty Đại Phát Sài Gòn",
+        "contactAddress": "Số 381 Trần Xuân Soạn, Phường Tân Kiểng, Quận 7, TP.HCM",
+        "contactName": "Công ty Phát Đạt Sài Gòn",
+        "contactPhone": "01224334872",
+        "createdAt": "2015-09-21T03:09:14.463Z",
+        "dueOn": {
+            "__type": "Date",
+            "iso": "2015-09-30T03:11:00.000Z"
+        },
+        "jobCategory": "Việc làm bán thời gian",
+        "jobDescription": "Tuyển nhân viên làm việc tại nhà 3 giờ/ngày lương cao tại TP HCM. Do nhu cầu phát triển thị trường công ty chúng tôi cần đội ngũ nhân viên làm việc tại nhà phụ trợ công ty.",
+        "jobDetails": "* Mô tả công việc: Đây là công việc chỉ Đăng Tin lên các Website, Diễn Đàn, Facebook với mục đích là Quảng Cáo Sản Phẩm cho Công Ty. Nội dung tin đăng Công Ty sẽ cung cấp sẵn bạn chỉ cần đăng tải lên các Website, Diễn Đàn và mạng xã hội. Công ty không yêu cầu kĩ năng kinh nghiệm và sẽ hướng dẫn chi tiết công việc cho bạn .\n- Loại hình công việc: Bán thời gian, làm thêm để tăng thu nhập giảm bớt gánh nặng kinh tế cho gia đình hoặc bản thân rất tốt.\n- Đối tượng tham gia: Những ai có điện thoại, Máy Tính Laptop hoặc Máy Bàn có kết nối internet. đều có thể làm việc.\n- Thời gian làm việc: linh hoạt chỉ cần có máy tính kết nối internet và online trung bình 2h-4h/ngày,lúc nào làm cũng được, sáng, trưa, chiều, tối)có thể làm toàn thời gian.\n-Tính chất công việc: làm tại nhà, cơ quan hoặc bất kỳ nơi đâu, không cần có mặt tại công ty.( không cần kinh nghiệm )\n- Nơi Làm Việc : Toàn quốc ,ưu tiên TPHCM, Bình Dương, Đồng Nai, Bình Phước, Vũng Tàu, Long An ,khu vực Miền Nam -Miềm Bắc – Miền Tây \n* Ghi Chú: Ứng viên không cần kinh nghiệm vì sẽ được công ty hướng dẫn, đào tạo miễn phí.\nDÙ LÀ CÔNG VIỆC PARTTIME NHƯNG CTY CHÚNG TÔI VẪN SẼ KÝ HỢP ĐỒNG KHI ỨNG VIÊN TRÚNG TUYỂN ĐỂ ĐẢM BẢO QUYỀN LỢI CHO ỨNG VIÊN KHI LÀM VIỆC VỚI CÔNG TY .\n+ Chỉ cần có máy tính kết nối internet .Các ứng viên chưa có kinh nghiệm sẽ chỉ dạy luôn ngay khi nhận việc .(Không yêu cầu kinh nghiệm) Thời gian phỏng vấn và nhận việc trong vòng 20 phút.\n+ Lưu Ý : phỏng vấn trực tiếp tại Công ty. Và chỉ cần lên phỏng một lần không cần phải lên Công ty lần 2. Công ty sẽ gửi kèm theo File hướng dẫn cách làm việc cho nhân viên. Trừ khi nhận việc về nhà chưa làm được có thể lên công ty, để được hướng dẫn rõ hơn, hoặc nhân viên có thể liên hệ với bên kỹ thuật của Công Ty qua mọi hình thức, Trực Tiếp, Email, Điện Thoại, Online …\n* Ghi chú:\n- Công ty hướng dẫn \u0026 trang bị sẵn danh sách hơn 800 website rao vặt, diễn đàn, mạng xã hội và Các Tài Liệu Sản Phẩm.\n- Đào tạo hàng tuần trực tuyến cho những người mới bắt đầu từ con số 0. ( Ko cần có mặt tại Công Ty Học )\nMức lương : 5 triệu đến 7 triệu + nhiều chính sách và thưởng (làm toàn thời gian lương từ 7 triệu đến 10 triệu/tháng). \nHồ sơ chỉ cần:\n- CMND gốc (để đối chiếu với bản photo) + 01 bản photo (không cần công chứng) ",
+        "jobId": "P0001",
+        "jobTitle": "Tuyển nhân viên làm việc tại nhà",
+        "jobType": "Bán thời gian",
+        "location": {
+            "__type": "GeoPoint",
+            "latitude": 10.762622,
+            "longitude": 106.660172
+        },
+        "objectId": "Vy6aQP5ZdM",
+        "photoURL": "http://i.imgur.com/u4rDUcB.jpg",
+        "salary": "5 - 10 triệu",
+        "updatedAt": "2015-09-21T06:32:23.903Z",
+        "userName": "panda",
+        "workAt": "Hồ Chí Minh"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            }
+        },
+        "companyName": "NA",
+        "contactAddress": "Số 4/12 Đồ Sơn, Phường 4 , Q.Tân Bình",
+        "contactEmail": "lehuudanh.sale@gmail.com",
+        "contactName": "Anh Danh",
+        "contactPhone": "01659597962",
+        "createdAt": "2015-09-20T22:45:12.812Z",
+        "dueOn": {
+            "__type": "Date",
+            "iso": "2015-09-28T22:58:00.000Z"
+        },
+        "jobCategory": "Việc làm sinh viên",
+        "jobDescription": "***PHỤC VỤ TIỆC NHÀ HÀNG TIỆC CƯỚI TẠI QUẬN 6, 10, 4 , TÂN PHÚ, TÂN BÌNH, PHÚ NHUẬN, GÒ VẤP......*** - Set up bàn ghế và món ăn trong nhà hàng",
+        "jobDetails": "Các ca làm việc: dễ dàng cho các bạn nhân viên sắp xếp phù hợp (lương tăng dần nếu các bạn làm việc tích cực) Ca sáng - 7h đến ~15h: 100.000-120.000/ca (hỗ trợ 01 phần cơm) - Giám sát quản lí tiệc 160.000/ca - 9h đến ~15h: 70.000đ-80.000/ca (hỗ trợ 01 phần cơm) - Giám sát quản lí tiệc 100.000/ca Ca chiều - 13h ~ 22h: 100.000-120.000/ca (hỗ trợ 01 phần cơm) - Giám sát tiệc 160.000/ca - 16h ~ 22h: 70.000đ-80.000/ca (hỗ trợ 01 phần cơm) - Giám sát tiệc 100.000/ca",
+        "jobId": "T0001",
+        "jobTitle": "Phục Vụ Nhà Hàng Tiệc Cưới",
+        "jobType": "Thời vụ",
+        "location": {
+            "__type": "GeoPoint",
+            "latitude": 10.762622,
+            "longitude": 106.660172
+        },
+        "objectId": "rj4ykPkPhQ",
+        "photoURL": "http://i.imgur.com/T9AzrwW.jpg",
+        "salary": "Thoả thuận",
+        "updatedAt": "2015-09-21T06:33:34.879Z",
+        "userName": "panda",
+        "workAt": "Hồ Chí Minh"
+    }
+] }
