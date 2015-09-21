@@ -35,14 +35,6 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     jobsList = ParseInterface.sharedInstance.getJobsInformation()
     jobsTableView.reloadData()
     if jobsList?.count > 0 {
-//      for var i = 0; i < jobsList?.count; i++ {
-//        let jobTitle = jobsList![i]["jobTitle"] as! String
-//        let jobId = jobsList![i]["jobId"]
-      
-//        print("Get #\(i), ID: \(jobId), Title: \(jobTitle)")
-//        let photoURL = jobsList![i]["photoURL"] as! String
-//        print("Photo link: \(photoURL)")
-//      }
     }
   }
   
@@ -77,7 +69,7 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     return cell
   }
-
+  
   
   
   
@@ -86,12 +78,22 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
   
   // In a storyboard-based application, you will often want to do a little preparation before navigation
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if sender is UIBarButtonItem {
+      if sender?.tag == 0 {
+        let navigationVC = segue.destinationViewController as! UINavigationController
+        let filterVC = navigationVC.topViewController as! JobFilterViewController
+        
+      } else if sender?.tag == 1 {
+        let mapVC = segue.destinationViewController as! JobMapViewController
+//        mapVC.selectedJob = jobsList![0]
+        
+      }
+    } else {
+      let detailsVC = segue.destinationViewController as! JobDetailsViewController
+      let indexPath = jobsTableView.indexPathForCell(sender as! UITableViewCell)
+      detailsVC.selectedJob = jobsList![indexPath!.row]
+    }
     
-    let detailsVC = segue.destinationViewController as! JobDetailsViewController
-    let indexPath = jobsTableView.indexPathForCell(sender as! UITableViewCell)
-    
-    detailsVC.selectedJob = jobsList![indexPath!.row]
-  
   }
   
   

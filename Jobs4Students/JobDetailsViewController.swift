@@ -14,9 +14,6 @@ class JobDetailsViewController: UIViewController, MKMapViewDelegate {
   @IBOutlet weak var map: MKMapView!
   
   @IBOutlet weak var jobDescription: UITextView!
-  
-  
-  
   var selectedJob: PFObject?
   
   var localSearchRequest:MKLocalSearchRequest!
@@ -75,13 +72,13 @@ class JobDetailsViewController: UIViewController, MKMapViewDelegate {
     let textToShare = selectedJob!["jobDescription"] as! String // "Swift is awesome!  Check out this website about it!"
     let contactAddress = self.selectedJob!["contactAddress"] as! String
 
-    if let myWebsite = NSURL(string: "http://www.codingexplorer.com/")
-    {
+//    if let myWebsite = NSURL(string: "http://www.codingexplorer.com/")
+//    {
       let objectsToShare = [textToShare, contactAddress]
       let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
       
       self.presentViewController(activityVC, animated: true, completion: nil)
-    }
+//    }
   }
   
   @IBAction func onApplyJob(sender: UIBarButtonItem) {

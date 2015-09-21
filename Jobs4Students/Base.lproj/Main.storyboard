@@ -5,9 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Tìm việc-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="JobsListViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,15 +114,15 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Qvq-9C-qV1"/>
-                    <navigationItem key="navigationItem" id="xRz-Tb-Mwv">
+                    <navigationItem key="navigationItem" title="Tìm việc" id="xRz-Tb-Mwv">
                         <barButtonItem key="leftBarButtonItem" image="Filter" id="RNv-BU-Skr">
                             <connections>
-                                <segue destination="oMc-Ha-izG" kind="push" id="pzA-Kj-eu1"/>
+                                <segue destination="oMc-Ha-izG" kind="modal" id="pzA-Kj-eu1"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Map" id="Osm-VB-IrF">
+                        <barButtonItem key="rightBarButtonItem" tag="1" image="Map" id="Osm-VB-IrF">
                             <connections>
-                                <segue destination="KqR-I0-Ck1" kind="push" id="5VO-gL-dRu"/>
+                                <segue destination="KqR-I0-Ck1" kind="modal" id="5VO-gL-dRu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -160,6 +161,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PZ7-7z-u3T"/>
+                    <connections>
+                        <outlet property="map" destination="IDb-61-n1D" id="Yu6-BV-5gx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLZ-2v-F8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,16 +212,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Swift Developer" id="PYG-ia-uaU">
-                        <barButtonItem key="leftBarButtonItem" image="Apply" id="Kzu-og-PH1">
-                            <connections>
-                                <action selector="onApplyJob:" destination="bjb-OI-dIx" id="jXL-QK-KdL"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Share" id="eD1-33-XOf">
-                            <connections>
-                                <action selector="onShareJob:" destination="bjb-OI-dIx" id="tPW-r1-UWB"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="Share" id="eD1-33-XOf">
+                                <connections>
+                                    <action selector="onShareJob:" destination="bjb-OI-dIx" id="tPW-r1-UWB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Apply" id="QqR-9h-YOc">
+                                <connections>
+                                    <action selector="onApplyJob:" destination="bjb-OI-dIx" id="VQ0-c1-9gL"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="jobDescription" destination="yNa-91-9ra" id="CPy-7k-sD4"/>
