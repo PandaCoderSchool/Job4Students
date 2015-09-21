@@ -48,5 +48,5 @@ The differences from current Job Search is that this one only use for students. 
 ![Job4Students](Mockups/Basic.png)
 
 ## Notes:
-- Project is developed based on XCode 7.1 Beta
+- Project is developed based on XCode 7
 
