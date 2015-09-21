@@ -5,3 +5,5 @@
 #import <Parse.h>
 #import <ParseUI.h>
 #import <Bolts.h>
+
+#import "UIImageView+AFNetworking.h"

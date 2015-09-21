@@ -4,6 +4,7 @@
 target 'Jobs4Students' do
 	pod ‘Parse’
 	pod ‘ParseUI’
+	pod "AFNetworking"
 
 end
 

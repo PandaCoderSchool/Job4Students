@@ -39,10 +39,11 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
         let jobTitle = jobsList![i]["jobTitle"] as! String
         let jobId = jobsList![i]["jobId"]
         
-        print("Get #\(i), ID: \(jobId), Title: \(jobTitle)")
-        let photoURL = jobsList![i]["photoURL"] as! String
-        print("Photo link: \(photoURL)")
+//        print("Get #\(i), ID: \(jobId), Title: \(jobTitle)")
+//        let photoURL = jobsList![i]["photoURL"] as! String
+//        print("Photo link: \(photoURL)")
         
+
       }
     }
   }
@@ -73,8 +74,7 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     // MARK: Load image
 //    cell.jobImage.image = nil
 //    if let urlString:String? = jobsList![indexPath.row]["photoURL"] as? String {
-//        if let url:NSURL? = NSURL(string: urlString!) {
-//        let error:NSError?
+//      if let url:NSURL? = NSURL(string: urlString!) {
 //        let request:NSURLRequest = NSURLRequest(URL: url!, cachePolicy: NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval: 5.0)
 //        
 //        NSOperationQueue.mainQueue().cancelAllOperations()
@@ -82,11 +82,16 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
 //        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {
 //          (response:NSURLResponse?, imageData:NSData?, error:NSError?) -> Void in
 //          
-//          (cell.jobImage.image = UIImage(data: imageData!))
+//          cell.jobImage.image = UIImage(data: imageData!)
+//          print("Data: \(imageData)")
 //          
 //        })
 //      }
 //    }
+    cell.jobImage.image = nil
+    let photoUrl = NSURL(string: (jobsList![indexPath.row]["photoURL"] as? String)!)
+    print(photoUrl)
+        cell.jobImage.setImageWithURL(photoUrl!)
     
 
     return cell
