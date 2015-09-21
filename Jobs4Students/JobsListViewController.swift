@@ -85,7 +85,6 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
         
       } else if sender?.tag == 1 {
         let mapVC = segue.destinationViewController as! JobMapViewController
-//        mapVC.selectedJob = jobsList![0]
         
       }
     } else {
