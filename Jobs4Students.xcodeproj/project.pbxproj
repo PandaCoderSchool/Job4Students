@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		27230BC373253819844E8AD9 /* libPods-Jobs4Students.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0EB676C224A398C607EFDF /* libPods-Jobs4Students.a */; };
 		C546F67A1BAF8EBD00D3926B /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546F6791BAF8EBD00D3926B /* JobCell.swift */; settings = {ASSET_TAGS = (); }; };
+		C546F67C1BAFB69E00D3926B /* Jobs-Graphic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C546F67B1BAFB69E00D3926B /* Jobs-Graphic.jpg */; settings = {ASSET_TAGS = (); }; };
+		C546F67E1BAFBD2100D3926B /* JobDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546F67D1BAFBD2100D3926B /* JobDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C546F6801BAFBD4700D3926B /* JobFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546F67F1BAFBD4700D3926B /* JobFilterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C546F6821BAFBD5200D3926B /* JobMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546F6811BAFBD5200D3926B /* JobMapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C55C44D81BAF758200BB5D9C /* JobsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C44D71BAF758200BB5D9C /* JobsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C5618E031BAEF4310083ED90 /* ParseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5618E021BAEF4310083ED90 /* ParseInterface.swift */; settings = {ASSET_TAGS = (); }; };
 		C59248FA1BA6C7A300C51658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59248F91BA6C7A300C51658 /* AppDelegate.swift */; };
@@ -22,6 +26,10 @@
 		899280228C3654C283C38969 /* Pods-Jobs4Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobs4Students.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jobs4Students/Pods-Jobs4Students.debug.xcconfig"; sourceTree = "<group>"; };
 		C1865C8FFF7FF9EE6991040B /* Pods-Jobs4Students.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobs4Students.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jobs4Students/Pods-Jobs4Students.release.xcconfig"; sourceTree = "<group>"; };
 		C546F6791BAF8EBD00D3926B /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		C546F67B1BAFB69E00D3926B /* Jobs-Graphic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jobs-Graphic.jpg"; sourceTree = "<group>"; };
+		C546F67D1BAFBD2100D3926B /* JobDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobDetailsViewController.swift; sourceTree = "<group>"; };
+		C546F67F1BAFBD4700D3926B /* JobFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobFilterViewController.swift; sourceTree = "<group>"; };
+		C546F6811BAFBD5200D3926B /* JobMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobMapViewController.swift; sourceTree = "<group>"; };
 		C55C44D71BAF758200BB5D9C /* JobsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsListViewController.swift; sourceTree = "<group>"; };
 		C5618E021BAEF4310083ED90 /* ParseInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInterface.swift; sourceTree = "<group>"; };
 		C5618E041BAEF4600083ED90 /* Jobs4Students-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jobs4Students-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -74,6 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				C55C44D71BAF758200BB5D9C /* JobsListViewController.swift */,
+				C546F67D1BAFBD2100D3926B /* JobDetailsViewController.swift */,
+				C546F67F1BAFBD4700D3926B /* JobFilterViewController.swift */,
+				C546F6811BAFBD5200D3926B /* JobMapViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 				C5618E011BAEF3DF0083ED90 /* Parse */,
 				C59248F91BA6C7A300C51658 /* AppDelegate.swift */,
 				C59248FB1BA6C7A300C51658 /* ViewController.swift */,
+				C546F67B1BAFB69E00D3926B /* Jobs-Graphic.jpg */,
 				C59248FD1BA6C7A300C51658 /* Main.storyboard */,
 				C5618E041BAEF4600083ED90 /* Jobs4Students-Bridging-Header.h */,
 				C59249001BA6C7A300C51658 /* Assets.xcassets */,
@@ -182,6 +194,7 @@
 			files = (
 				C59249011BA6C7A300C51658 /* Assets.xcassets in Resources */,
 				C59248FF1BA6C7A300C51658 /* Main.storyboard in Resources */,
+				C546F67C1BAFB69E00D3926B /* Jobs-Graphic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,10 +239,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55C44D81BAF758200BB5D9C /* JobsListViewController.swift in Sources */,
+				C546F67E1BAFBD2100D3926B /* JobDetailsViewController.swift in Sources */,
 				C546F67A1BAF8EBD00D3926B /* JobCell.swift in Sources */,
 				C59248FC1BA6C7A300C51658 /* ViewController.swift in Sources */,
 				C59248FA1BA6C7A300C51658 /* AppDelegate.swift in Sources */,
+				C546F6821BAFBD5200D3926B /* JobMapViewController.swift in Sources */,
 				C5618E031BAEF4310083ED90 /* ParseInterface.swift in Sources */,
+				C546F6801BAFBD4700D3926B /* JobFilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

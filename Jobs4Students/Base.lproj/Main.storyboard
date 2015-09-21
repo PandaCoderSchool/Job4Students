@@ -23,47 +23,67 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="111" id="7oU-At-eLt" userLabel="Job Cell" customClass="JobCell" customModule="Jobs4Students" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="111"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="JobCell" rowHeight="120" id="7oU-At-eLt" userLabel="Job Cell" customClass="JobCell" customModule="Jobs4Students" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7oU-At-eLt" id="be6-tF-sD9">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="110.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6G-iq-Kgk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Jobs-Graphic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D6G-iq-Kgk">
+                                                    <rect key="frame" x="0.0" y="10" width="100" height="100"/>
                                                     <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="Nyv-ND-GyD"/>
+                                                        <constraint firstAttribute="height" constant="100" id="zfa-oh-3Qh"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv9-ie-cYh">
-                                                    <rect key="frame" x="108" y="8" width="139" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5K8-BA-FfH">
-                                                    <rect key="frame" x="108" y="37" width="91" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Phát tờ rơi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv9-ie-cYh">
+                                                    <rect key="frame" x="108" y="5" width="174" height="20.5"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due: Jan-01-2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-il-t2z">
-                                                    <rect key="frame" x="108" y="66" width="139" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Cty TNHH Tờ Rơi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5K8-BA-FfH">
+                                                    <rect key="frame" x="108" y="36" width="174" height="19.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hạn chót: 30/9/2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-il-t2z">
+                                                    <rect key="frame" x="108" y="65" width="174" height="17"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$25/h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhI-S3-PlT">
-                                                    <rect key="frame" x="241" y="39" width="71" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Thoả thuận" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhI-S3-PlT">
+                                                    <rect key="frame" x="108" y="91" width="78" height="28.5"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="lv9-ie-cYh" firstAttribute="leading" secondItem="D6G-iq-Kgk" secondAttribute="trailing" constant="8" id="1En-jk-ILi"/>
+                                                <constraint firstAttribute="trailing" secondItem="FKT-il-t2z" secondAttribute="trailing" constant="5" id="89W-O9-b7u"/>
+                                                <constraint firstAttribute="bottom" secondItem="bhI-S3-PlT" secondAttribute="bottom" id="Dde-S7-loO"/>
+                                                <constraint firstItem="bhI-S3-PlT" firstAttribute="top" secondItem="FKT-il-t2z" secondAttribute="bottom" constant="9" id="EUW-He-CCD"/>
+                                                <constraint firstAttribute="trailing" secondItem="lv9-ie-cYh" secondAttribute="trailing" constant="5" id="GLr-a1-TNu"/>
+                                                <constraint firstItem="D6G-iq-Kgk" firstAttribute="centerY" secondItem="be6-tF-sD9" secondAttribute="centerY" id="QuE-A1-jTe"/>
+                                                <constraint firstItem="5K8-BA-FfH" firstAttribute="leading" secondItem="lv9-ie-cYh" secondAttribute="leading" id="WM1-hD-QcJ"/>
+                                                <constraint firstItem="lv9-ie-cYh" firstAttribute="top" secondItem="be6-tF-sD9" secondAttribute="top" constant="5" id="cch-PB-AfO"/>
+                                                <constraint firstItem="FKT-il-t2z" firstAttribute="top" secondItem="5K8-BA-FfH" secondAttribute="bottom" constant="9.5" id="cm5-fw-u7H"/>
+                                                <constraint firstItem="bhI-S3-PlT" firstAttribute="leading" secondItem="FKT-il-t2z" secondAttribute="leading" id="dQR-CB-XpT"/>
+                                                <constraint firstItem="5K8-BA-FfH" firstAttribute="top" secondItem="lv9-ie-cYh" secondAttribute="bottom" constant="10.5" id="iFJ-R1-07F"/>
+                                                <constraint firstItem="FKT-il-t2z" firstAttribute="leading" secondItem="5K8-BA-FfH" secondAttribute="leading" id="qQd-CR-Etv"/>
+                                                <constraint firstItem="D6G-iq-Kgk" firstAttribute="leading" secondItem="be6-tF-sD9" secondAttribute="leading" id="xRV-9o-9wB"/>
+                                                <constraint firstAttribute="trailing" secondItem="5K8-BA-FfH" secondAttribute="trailing" constant="5" id="yMy-7k-FkO"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
@@ -76,6 +96,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="wFk-QY-sde"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="8sk-Xz-zWH"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -108,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="1194" y="288"/>
         </scene>
-        <!--View Controller-->
+        <!--Job Map View Controller-->
         <scene sceneID="rxw-k4-jSL">
             <objects>
-                <viewController id="KqR-I0-Ck1" sceneMemberID="viewController">
+                <viewController id="KqR-I0-Ck1" customClass="JobMapViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X2q-Io-VXb"/>
                         <viewControllerLayoutGuide type="bottom" id="tGq-u5-bN7"/>
@@ -143,7 +167,7 @@
         <!--Swift Developer-->
         <scene sceneID="xgi-3n-OyU">
             <objects>
-                <viewController id="bjb-OI-dIx" sceneMemberID="viewController">
+                <viewController id="bjb-OI-dIx" customClass="JobDetailsViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gT4-Ch-Fps"/>
                         <viewControllerLayoutGuide type="bottom" id="0iu-4a-1KL"/>
@@ -187,6 +211,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Swift Developer" id="PYG-ia-uaU"/>
+                    <connections>
+                        <outlet property="map" destination="Pek-bT-Qht" id="fGw-Xp-rZD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoy-Ab-vwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +241,7 @@
         <!--Filter-->
         <scene sceneID="NbQ-mo-T6d">
             <objects>
-                <viewController id="Vqj-r2-A5N" customClass="FilterViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vqj-r2-A5N" customClass="JobFilterViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iC0-K1-pD0"/>
                         <viewControllerLayoutGuide type="bottom" id="jYy-3s-8Q9"/>
@@ -308,4 +335,7 @@
             <point key="canvasLocation" x="1630" y="29"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Jobs-Graphic.jpg" width="800" height="600"/>
+    </resources>
 </document>
