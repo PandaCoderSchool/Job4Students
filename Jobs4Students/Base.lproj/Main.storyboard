@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Item-->
@@ -176,8 +177,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNa-91-9ra">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="242"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNa-91-9ra">
+                                <rect key="frame" x="0.0" y="64" width="320" height="227"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Job Requirement:
@@ -188,30 +189,53 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4A-ez-Dup">
-                                <rect key="frame" x="0.0" y="481" width="320" height="38"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-bT-Qht">
+                                <rect key="frame" x="0.0" y="291" width="320" height="170.5"/>
                                 <animations/>
-                                <state key="normal" title="Apply">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWJ-TS-39G">
-                                <rect key="frame" x="0.0" y="435" width="320" height="38"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWJ-TS-39G">
+                                <rect key="frame" x="0.0" y="480" width="320" height="40"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Bi-fU-29L"/>
+                                </constraints>
                                 <state key="normal" title="Share">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-bT-Qht">
-                                <rect key="frame" x="0.0" y="250" width="320" height="177"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4A-ez-Dup">
+                                <rect key="frame" x="0.0" y="520" width="320" height="40"/>
                                 <animations/>
-                            </mapView>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zVf-bO-RZ5"/>
+                                </constraints>
+                                <state key="normal" title="Apply">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UWJ-TS-39G" firstAttribute="leading" secondItem="Zah-d3-TxN" secondAttribute="leading" id="0X8-fE-11N"/>
+                            <constraint firstItem="yNa-91-9ra" firstAttribute="height" secondItem="Zah-d3-TxN" secondAttribute="height" multiplier="0.4" id="95n-x1-zZV"/>
+                            <constraint firstItem="Pek-bT-Qht" firstAttribute="height" secondItem="Zah-d3-TxN" secondAttribute="height" multiplier="0.3" id="Ehd-4r-MgH"/>
+                            <constraint firstAttribute="trailing" secondItem="yNa-91-9ra" secondAttribute="trailing" id="G8X-bv-4EQ"/>
+                            <constraint firstItem="Pek-bT-Qht" firstAttribute="top" secondItem="yNa-91-9ra" secondAttribute="bottom" id="GQd-sj-uvr"/>
+                            <constraint firstItem="0iu-4a-1KL" firstAttribute="top" secondItem="l4A-ez-Dup" secondAttribute="bottom" constant="8" id="Hmz-YB-P6Y"/>
+                            <constraint firstAttribute="trailing" secondItem="UWJ-TS-39G" secondAttribute="trailing" id="IlM-Uj-mHe"/>
+                            <constraint firstAttribute="trailing" secondItem="l4A-ez-Dup" secondAttribute="trailing" id="Oi3-Ww-hjw"/>
+                            <constraint firstItem="l4A-ez-Dup" firstAttribute="top" secondItem="UWJ-TS-39G" secondAttribute="bottom" id="ZRW-mf-uyS"/>
+                            <constraint firstItem="Pek-bT-Qht" firstAttribute="leading" secondItem="Zah-d3-TxN" secondAttribute="leading" id="ahO-RP-rTf"/>
+                            <constraint firstItem="yNa-91-9ra" firstAttribute="leading" secondItem="Zah-d3-TxN" secondAttribute="leading" id="dY8-z4-HNY"/>
+                            <constraint firstAttribute="trailing" secondItem="Pek-bT-Qht" secondAttribute="trailing" id="fT0-Ns-obl"/>
+                            <constraint firstItem="l4A-ez-Dup" firstAttribute="leading" secondItem="Zah-d3-TxN" secondAttribute="leading" id="fkY-Wz-gTV"/>
+                            <constraint firstItem="yNa-91-9ra" firstAttribute="top" secondItem="gT4-Ch-Fps" secondAttribute="bottom" id="hYG-qZ-8q7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Swift Developer" id="PYG-ia-uaU"/>
                     <connections>
+                        <outlet property="jobDescription" destination="yNa-91-9ra" id="CPy-7k-sD4"/>
                         <outlet property="map" destination="Pek-bT-Qht" id="fGw-Xp-rZD"/>
                     </connections>
                 </viewController>
