@@ -9,16 +9,23 @@
 import UIKit
 
 class JobCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+  
+  @IBOutlet weak var jobImage: UIImageView!
+  @IBOutlet weak var jobTitle: UILabel!
+  @IBOutlet weak var companyLabel: UILabel!
+  @IBOutlet weak var dueSubmitDateLabel: UILabel!
+  @IBOutlet weak var salaryLabel: UILabel!
+  
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    // Initialization code
+  }
+  
+  override func setSelected(selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+    
+    // Configure the view for the selected state
+  }
+  
 }

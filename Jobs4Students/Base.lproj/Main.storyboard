@@ -23,7 +23,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="111" id="7oU-At-eLt">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="111" id="7oU-At-eLt" userLabel="Job Cell" customClass="JobCell" customModule="Jobs4Students" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86" width="320" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7oU-At-eLt" id="be6-tF-sD9">
@@ -67,6 +67,11 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
+                                            <outlet property="companyLabel" destination="5K8-BA-FfH" id="jSr-K0-Bu2"/>
+                                            <outlet property="dueSubmitDateLabel" destination="FKT-il-t2z" id="HNy-id-De5"/>
+                                            <outlet property="jobImage" destination="D6G-iq-Kgk" id="Mda-Vq-3bS"/>
+                                            <outlet property="jobTitle" destination="lv9-ie-cYh" id="jbt-ND-Rfs"/>
+                                            <outlet property="salaryLabel" destination="bhI-S3-PlT" id="dkk-gO-uLR"/>
                                             <segue destination="bjb-OI-dIx" kind="push" id="8ds-9Q-VbG"/>
                                         </connections>
                                     </tableViewCell>
