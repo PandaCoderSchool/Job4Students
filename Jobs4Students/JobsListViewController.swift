@@ -9,6 +9,9 @@
 import UIKit
 
 class JobsListViewController: UIViewController {
+  
+  @IBOutlet weak var jobsTableView: UITableView!
+  
   var jobsList: [PFObject]? = [PFObject]()
   override func viewDidLoad() {
     super.viewDidLoad()
