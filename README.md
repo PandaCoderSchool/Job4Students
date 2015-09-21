@@ -47,6 +47,10 @@ The differences from current Job Search is that this one only use for students. 
 ## App Wireframe: 
 ![Job4Students](Mockups/Basic.png)
 
+## Walkthrough: 
+![Walkthrough](WalkThrough.gif)
+
 ## Notes:
 - Project is developed based on XCode 7
+
 
