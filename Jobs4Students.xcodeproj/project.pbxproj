@@ -19,6 +19,7 @@
 		C59248FC1BA6C7A300C51658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59248FB1BA6C7A300C51658 /* ViewController.swift */; };
 		C59248FF1BA6C7A300C51658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59248FD1BA6C7A300C51658 /* Main.storyboard */; };
 		C59249011BA6C7A300C51658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59249001BA6C7A300C51658 /* Assets.xcassets */; };
+		C5E189801BB1064C00ECC4FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E1897F1BB1064C00ECC4FA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		C59248FE1BA6C7A300C51658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C59249001BA6C7A300C51658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C59249051BA6C7A300C51658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5E1897F1BB1064C00ECC4FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E189801BB1064C00ECC4FA /* CoreLocation.framework in Frameworks */,
 				27230BC373253819844E8AD9 /* libPods-Jobs4Students.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +68,7 @@
 		54DDC7AB40FF2EEA67CFD11B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5E1897F1BB1064C00ECC4FA /* CoreLocation.framework */,
 				5B0EB676C224A398C607EFDF /* libPods-Jobs4Students.a */,
 			);
 			name = Frameworks;

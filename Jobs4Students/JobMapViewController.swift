@@ -9,10 +9,11 @@
 import UIKit
 import  MapKit
 
-class JobMapViewController: UIViewController, MKMapViewDelegate {
+class JobMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
   
   @IBOutlet weak var map: MKMapView!
   
+
   var selectedJob: PFObject?
   var jobsList: [PFObject]? = [PFObject]()
   
@@ -22,9 +23,17 @@ class JobMapViewController: UIViewController, MKMapViewDelegate {
   var pointAnnotation:MKPointAnnotation!
   var pinAnnotationView:MKPinAnnotationView!
   
+  var locationManager = CLLocationManager()
+  var userAnnotation = MKPointAnnotation()
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Update Map
+    locationManager.delegate = self
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    locationManager.requestAlwaysAuthorization()
+    locationManager.startUpdatingLocation()
     
   }
   
@@ -32,9 +41,16 @@ class JobMapViewController: UIViewController, MKMapViewDelegate {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  
   override func viewDidAppear(animated: Bool) {
     self.fetchJobsInformation()
   }
+  
+  override func viewDidDisappear(animated: Bool) {
+    locationManager.stopUpdatingLocation()
+    
+  }
+  
   func fetchJobsInformation() {
     jobsList = ParseInterface.sharedInstance.getJobsInformation()
     self.updateJobsMap()
@@ -51,6 +67,8 @@ class JobMapViewController: UIViewController, MKMapViewDelegate {
     }
     
   }
+  
+  // View job on Map
   let regionRadius: CLLocationDistance = 20000 // 20 km
   
   func pinJobOnMap(jobToPin: PFObject?) {
@@ -67,7 +85,9 @@ class JobMapViewController: UIViewController, MKMapViewDelegate {
       }
       //3
       self.pointAnnotation = MKPointAnnotation()
-      self.pointAnnotation.title = self.selectedJob!["contactAddress"] as? String
+      self.pointAnnotation.title    = jobToPin!["jobTitle"] as? String
+      self.pointAnnotation.subtitle = jobToPin!["contactAddress"] as? String
+      
       self.pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: localSearchResponse!.boundingRegion.center.latitude, longitude:     localSearchResponse!.boundingRegion.center.longitude)
       
       
@@ -75,26 +95,39 @@ class JobMapViewController: UIViewController, MKMapViewDelegate {
       self.map.centerCoordinate = self.pointAnnotation.coordinate
       self.map.addAnnotation(self.pinAnnotationView.annotation!)
       
-//      let latitude: CLLocationDegrees = localSearchResponse!.boundingRegion.center.latitude
-//      let longitue: CLLocationDegrees = localSearchResponse!.boundingRegion.center.longitude
-////
-//      let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitue)
-      
       let coordinateRegion = MKCoordinateRegionMakeWithDistance(self.pointAnnotation.coordinate, self.regionRadius, self.regionRadius)
       self.map.setRegion(coordinateRegion, animated: true)
       
-//      let latDelta: CLLocationDegrees = 0.01
-//      let lonDelta: CLLocationDegrees = 0.01
-//      let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-//      
-//      let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-//      self.map.setRegion(region, animated: true)
       
     }
     
   }
   
+  func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    
+    let userLocation: CLLocation = locations[0]
+    let latitude = userLocation.coordinate.latitude
+    let longitude = userLocation.coordinate.longitude
+    
+    let lonDelta:  CLLocationDegrees  = 0.01
+    let latDelta: CLLocationDegrees   = lonDelta
+    let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+    let location: CLLocationCoordinate2D  = CLLocationCoordinate2DMake(latitude, longitude)
+    let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+    
+    self.map.setRegion(region, animated: false)
+    
+
+    updateUserAnnotation(location)
+   
+  }
   
+  func updateUserAnnotation(location: CLLocationCoordinate2D?) {
+    
+        userAnnotation.coordinate = location!
+        userAnnotation.title  = "I'm here"
+        self.map.addAnnotation(userAnnotation)
+  }
   /*
   // MARK: - Navigation
   
