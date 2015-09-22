@@ -78,6 +78,7 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
   // In a storyboard-based application, you will often want to do a little preparation before navigation
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if sender is UIBarButtonItem {
+      
       if sender?.tag == 0 {
         let navigationVC = segue.destinationViewController as! UINavigationController
         let filterVC = navigationVC.topViewController as! JobFilterViewController
