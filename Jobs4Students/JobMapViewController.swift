@@ -13,7 +13,7 @@ class JobMapViewController: UIViewController, MKMapViewDelegate, CLLocationManag
   
   @IBOutlet weak var map: MKMapView!
   
-
+  
   var selectedJob: PFObject?
   var jobsList: [PFObject]? = [PFObject]()
   
@@ -124,17 +124,17 @@ class JobMapViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     
     self.map.setRegion(region, animated: false)
     
-
+    
     updateUserAnnotation(location)
-   
+    
   }
   
   func updateUserAnnotation(location: CLLocationCoordinate2D?) {
-    
-        userAnnotation.coordinate = location!
-        userAnnotation.title  = "I'm here"
-        self.map.addAnnotation(userAnnotation)
+    userAnnotation.coordinate = location!
+    userAnnotation.title  = "I'm here"
+    self.map.addAnnotation(userAnnotation)
   }
+  
   /*
   // MARK: - Navigation
   

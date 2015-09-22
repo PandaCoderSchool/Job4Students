@@ -37,9 +37,11 @@ class JobDetailsViewController: UIViewController, MKMapViewDelegate {
         alert.show()
         return
       }
-      //3
+      
       self.pointAnnotation = MKPointAnnotation()
-      self.pointAnnotation.title = self.selectedJob!["contactAddress"] as? String
+      self.pointAnnotation.title  = self.selectedJob!["jobTitle"] as? String
+      self.pointAnnotation.subtitle = self.selectedJob!["contactAddress"] as? String
+      
       self.pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: localSearchResponse!.boundingRegion.center.latitude, longitude:     localSearchResponse!.boundingRegion.center.longitude)
       
       
