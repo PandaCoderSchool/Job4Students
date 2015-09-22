@@ -116,11 +116,13 @@
                     <tabBarItem key="tabBarItem" title="Item" id="Qvq-9C-qV1"/>
                     <navigationItem key="navigationItem" title="Tìm việc" id="xRz-Tb-Mwv">
                         <barButtonItem key="leftBarButtonItem" image="Filter" id="RNv-BU-Skr">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="oMc-Ha-izG" kind="modal" id="pzA-Kj-eu1"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" tag="1" image="Map" id="Osm-VB-IrF">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="KqR-I0-Ck1" kind="modal" id="5VO-gL-dRu"/>
                             </connections>

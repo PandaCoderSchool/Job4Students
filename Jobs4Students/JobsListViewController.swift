@@ -12,7 +12,10 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
   
   @IBOutlet weak var jobsTableView: UITableView!
   
+  var timer: NSTimer = NSTimer()
   var jobsList: [PFObject]? = [PFObject]()
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -21,7 +24,7 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     jobsTableView.estimatedRowHeight = 160
     
     
-    NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "fetchJobsInformation", userInfo: nil, repeats: true)
+//    NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "fetchJobsInformation", userInfo: nil, repeats: true)
     
   }
   
@@ -30,10 +33,20 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     // Dispose of any resources that can be recreated.
   }
   
+  override func viewDidAppear(animated: Bool) {
+    timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "fetchJobsInformation", userInfo: nil, repeats: true)
+  }
+  override func viewDidDisappear(animated: Bool) {
+    timer.invalidate()
+  }
+  
   
   func fetchJobsInformation() {
     jobsList = ParseInterface.sharedInstance.getJobsInformation()
     jobsTableView.reloadData()
+    if jobsList?.count != 0 {
+      timer.invalidate()
+    }
     
   }
   
@@ -81,10 +94,10 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
       
       if sender?.tag == 0 {
         let navigationVC = segue.destinationViewController as! UINavigationController
-        let filterVC = navigationVC.topViewController as! JobFilterViewController
+        _ = navigationVC.topViewController as! JobFilterViewController
         
       } else if sender?.tag == 1 {
-        let mapVC = segue.destinationViewController as! JobMapViewController
+        _ = segue.destinationViewController as! JobMapViewController
         
       }
     } else {
