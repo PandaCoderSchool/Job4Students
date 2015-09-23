@@ -19,6 +19,7 @@
 		C59248FC1BA6C7A300C51658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59248FB1BA6C7A300C51658 /* ViewController.swift */; };
 		C59248FF1BA6C7A300C51658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59248FD1BA6C7A300C51658 /* Main.storyboard */; };
 		C59249011BA6C7A300C51658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59249001BA6C7A300C51658 /* Assets.xcassets */; };
+		C5AD4DD51BB25F42008939D7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AD4DD41BB25F42008939D7 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C5E189801BB1064C00ECC4FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E1897F1BB1064C00ECC4FA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,12 +35,13 @@
 		C55C44D71BAF758200BB5D9C /* JobsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsListViewController.swift; sourceTree = "<group>"; };
 		C5618E021BAEF4310083ED90 /* ParseInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInterface.swift; sourceTree = "<group>"; };
 		C5618E041BAEF4600083ED90 /* Jobs4Students-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jobs4Students-Bridging-Header.h"; sourceTree = "<group>"; };
-		C59248F61BA6C7A300C51658 /* Jobs4Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobs4Students.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59248F61BA6C7A300C51658 /* KiVi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiVi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59248F91BA6C7A300C51658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C59248FB1BA6C7A300C51658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C59248FE1BA6C7A300C51658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C59249001BA6C7A300C51658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C59249051BA6C7A300C51658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5AD4DD41BB25F42008939D7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C5E1897F1BB1064C00ECC4FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -114,7 +116,7 @@
 		C59248F71BA6C7A300C51658 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C59248F61BA6C7A300C51658 /* Jobs4Students.app */,
+				C59248F61BA6C7A300C51658 /* KiVi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +131,7 @@
 				C59248FB1BA6C7A300C51658 /* ViewController.swift */,
 				C546F67B1BAFB69E00D3926B /* Jobs-Graphic.jpg */,
 				C59248FD1BA6C7A300C51658 /* Main.storyboard */,
+				C5AD4DD41BB25F42008939D7 /* Launch Screen.storyboard */,
 				C5618E041BAEF4600083ED90 /* Jobs4Students-Bridging-Header.h */,
 				C59249001BA6C7A300C51658 /* Assets.xcassets */,
 				C59249051BA6C7A300C51658 /* Info.plist */,
@@ -139,9 +142,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C59248F51BA6C7A300C51658 /* Jobs4Students */ = {
+		C59248F51BA6C7A300C51658 /* KiVi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C59249081BA6C7A300C51658 /* Build configuration list for PBXNativeTarget "Jobs4Students" */;
+			buildConfigurationList = C59249081BA6C7A300C51658 /* Build configuration list for PBXNativeTarget "KiVi" */;
 			buildPhases = (
 				0DDE32B8E0DFC993A4976049 /* Check Pods Manifest.lock */,
 				C59248F21BA6C7A300C51658 /* Sources */,
@@ -153,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = Jobs4Students;
+			name = KiVi;
 			productName = Jobs4Students;
-			productReference = C59248F61BA6C7A300C51658 /* Jobs4Students.app */;
+			productReference = C59248F61BA6C7A300C51658 /* KiVi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C59248F51BA6C7A300C51658 /* Jobs4Students */,
+				C59248F51BA6C7A300C51658 /* KiVi */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +201,7 @@
 			files = (
 				C59249011BA6C7A300C51658 /* Assets.xcassets in Resources */,
 				C59248FF1BA6C7A300C51658 /* Main.storyboard in Resources */,
+				C5AD4DD51BB25F42008939D7 /* Launch Screen.storyboard in Resources */,
 				C546F67C1BAFB69E00D3926B /* Jobs-Graphic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C59249081BA6C7A300C51658 /* Build configuration list for PBXNativeTarget "Jobs4Students" */ = {
+		C59249081BA6C7A300C51658 /* Build configuration list for PBXNativeTarget "KiVi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C59249091BA6C7A300C51658 /* Debug */,

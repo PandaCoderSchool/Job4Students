@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C59248F51BA6C7A300C51658"
-               BuildableName = "Jobs4Students.app"
-               BlueprintName = "Jobs4Students"
+               BuildableName = "KiVi.app"
+               BlueprintName = "KiVi"
                ReferencedContainer = "container:Jobs4Students.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C59248F51BA6C7A300C51658"
-            BuildableName = "Jobs4Students.app"
-            BlueprintName = "Jobs4Students"
+            BuildableName = "KiVi.app"
+            BlueprintName = "KiVi"
             ReferencedContainer = "container:Jobs4Students.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C59248F51BA6C7A300C51658"
-            BuildableName = "Jobs4Students.app"
-            BlueprintName = "Jobs4Students"
+            BuildableName = "KiVi.app"
+            BlueprintName = "KiVi"
             ReferencedContainer = "container:Jobs4Students.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C59248F51BA6C7A300C51658"
-            BuildableName = "Jobs4Students.app"
-            BlueprintName = "Jobs4Students"
+            BuildableName = "KiVi.app"
+            BlueprintName = "KiVi"
             ReferencedContainer = "container:Jobs4Students.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -22,23 +22,25 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>  Copyright © 2015  Panda Team. All rights reserved.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location is always updated to get the jobs around you</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location will help to find jobs around</string>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Your location will help to find jobs around</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Your location is always updated to get the jobs around you</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
