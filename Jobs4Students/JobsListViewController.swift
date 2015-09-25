@@ -83,8 +83,8 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
         let filterVC = navigationVC.topViewController as! JobFilterViewController
         
       } else if sender?.tag == 1 {
-        let mapVC = segue.destinationViewController as! JobMapViewController
-        
+        let navigationVC = segue.destinationViewController as! UINavigationController
+        let mapVC = navigationVC.topViewController as! JobMapViewController
       }
     } else {
       let detailsVC = segue.destinationViewController as! JobDetailsViewController
