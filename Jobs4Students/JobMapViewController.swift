@@ -51,12 +51,6 @@ class JobMapViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     
   }
   
-  @IBAction func backButton(sender: UIButton) {
-    self.dismissViewControllerAnimated(true) { () -> Void in
-      print("Go back")
-      
-    }
-  }
   
   func fetchJobsInformation() {
     jobsList = ParseInterface.sharedInstance.getJobsInformation()

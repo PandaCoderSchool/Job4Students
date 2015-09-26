@@ -20,6 +20,7 @@
 		C59248FF1BA6C7A300C51658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59248FD1BA6C7A300C51658 /* Main.storyboard */; };
 		C59249011BA6C7A300C51658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59249001BA6C7A300C51658 /* Assets.xcassets */; };
 		C5AD4DD51BB25F42008939D7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AD4DD41BB25F42008939D7 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C5B8D3261BB65D0600E215F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8D3251BB65D0600E215F3 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C5E189801BB1064C00ECC4FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E1897F1BB1064C00ECC4FA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		C59249001BA6C7A300C51658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C59249051BA6C7A300C51658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5AD4DD41BB25F42008939D7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C5B8D3251BB65D0600E215F3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C5E1897F1BB1064C00ECC4FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				C546F67D1BAFBD2100D3926B /* JobDetailsViewController.swift */,
 				C546F67F1BAFBD4700D3926B /* JobFilterViewController.swift */,
 				C546F6811BAFBD5200D3926B /* JobMapViewController.swift */,
+				C5B8D3251BB65D0600E215F3 /* MainViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C59248FC1BA6C7A300C51658 /* ViewController.swift in Sources */,
 				C59248FA1BA6C7A300C51658 /* AppDelegate.swift in Sources */,
 				C546F6821BAFBD5200D3926B /* JobMapViewController.swift in Sources */,
+				C5B8D3261BB65D0600E215F3 /* MainViewController.swift in Sources */,
 				C5618E031BAEF4310083ED90 /* ParseInterface.swift in Sources */,
 				C546F6801BAFBD4700D3926B /* JobFilterViewController.swift in Sources */,
 			);
