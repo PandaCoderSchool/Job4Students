@@ -90,6 +90,12 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
   
   // In a storyboard-based application, you will often want to do a little preparation before navigation
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//    if segue.identifier == "FilterSegue" {
+//      print("Filter was pressed")
+//    }  else if segue.identifier == "MapView" {
+//      print("Map View was seletec")
+//    }
+    
     if sender is UIBarButtonItem {
       
       if sender?.tag == 0 {

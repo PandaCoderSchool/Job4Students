@@ -11,7 +11,7 @@
         <!--Tìm việc-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="JobsListViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="JobsListViewController" customModule="KiVi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -25,7 +25,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="JobCell" rowHeight="120" id="7oU-At-eLt" userLabel="Job Cell" customClass="JobCell" customModule="Jobs4Students" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="JobCell" rowHeight="120" id="7oU-At-eLt" userLabel="Job Cell" customClass="JobCell" customModule="KiVi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86" width="320" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7oU-At-eLt" id="be6-tF-sD9">
@@ -118,13 +118,13 @@
                         <barButtonItem key="leftBarButtonItem" image="Filter" id="RNv-BU-Skr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="oMc-Ha-izG" kind="modal" id="pzA-Kj-eu1"/>
+                                <segue destination="oMc-Ha-izG" kind="modal" identifier="FilterSegue" id="pzA-Kj-eu1"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" tag="1" image="Map" id="Osm-VB-IrF">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="KqR-I0-Ck1" kind="modal" id="5VO-gL-dRu"/>
+                                <segue destination="KqR-I0-Ck1" kind="modal" identifier="MapView" id="5VO-gL-dRu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -139,7 +139,7 @@
         <!--Job Map View Controller-->
         <scene sceneID="rxw-k4-jSL">
             <objects>
-                <viewController id="KqR-I0-Ck1" customClass="JobMapViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KqR-I0-Ck1" customClass="JobMapViewController" customModule="KiVi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X2q-Io-VXb"/>
                         <viewControllerLayoutGuide type="bottom" id="tGq-u5-bN7"/>
@@ -191,7 +191,7 @@
         <!--Swift Developer-->
         <scene sceneID="xgi-3n-OyU">
             <objects>
-                <viewController id="bjb-OI-dIx" customClass="JobDetailsViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bjb-OI-dIx" customClass="JobDetailsViewController" customModule="KiVi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gT4-Ch-Fps"/>
                         <viewControllerLayoutGuide type="bottom" id="0iu-4a-1KL"/>
@@ -279,7 +279,7 @@
         <!--Filter-->
         <scene sceneID="NbQ-mo-T6d">
             <objects>
-                <viewController id="Vqj-r2-A5N" customClass="JobFilterViewController" customModule="Jobs4Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vqj-r2-A5N" customClass="JobFilterViewController" customModule="KiVi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iC0-K1-pD0"/>
                         <viewControllerLayoutGuide type="bottom" id="jYy-3s-8Q9"/>
@@ -293,7 +293,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="3xX-SZ-aVd" customClass="SwitchCell" customModule="Jobs4Students" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="3xX-SZ-aVd" customClass="SwitchCell" customModule="KiVi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="113.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3xX-SZ-aVd" id="ZjL-2i-61Y">
