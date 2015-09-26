@@ -45,7 +45,7 @@ The differences from current Job Search is that this one only use for students. 
 - Review companies' expectations and requirements to update their program to fit them.
 
 ## App Wireframe: 
-![Job4Students](Mockups/Basic.png)
+
 ![Job4Students](Mockups/Concept 02.png)
 
 ## Notes:
