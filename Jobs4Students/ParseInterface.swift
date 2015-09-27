@@ -19,7 +19,7 @@ class ParseInterface: NSObject {
   let defaultUserName = "panda"
   let defaultPassword = "panda"
   
-  var jobsInfo  = [PFObject]?()
+  var jobsInfo: [PFObject]?
   var employers = [PFObject]?()
   // sharedInstance to be used in other classes
   
@@ -32,6 +32,7 @@ class ParseInterface: NSObject {
   
   override init() {
     super.init()
+    jobsInfo = [PFObject]()
     
   }
   
@@ -44,42 +45,39 @@ class ParseInterface: NSObject {
   // Get Jobs Information from Database, return the PFObject array
   
   func getJobsInformation() -> [PFObject]? {
-    
+    var tempObj = [PFObject]?()
     let qr = PFQuery(className: "Employer")
     qr.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
       if error == nil {
         self.employers = objects
-        print("Got employers: \(self.employers!.count)")
-      } else {
-        self.employers = nil
+        for employer in self.employers! {
+          
+//          print("Got employer: \(employer)")
+
+          
+          let query = PFQuery(className: "JobInfo")
+          query.orderByAscending("createdAt")
+          query.whereKey("employers", equalTo: employer)
+          
+          query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+            if let error = error {
+              let errorStr = error.userInfo["error"] as? String
+              print("Error: \(errorStr) ")
+              self.jobsInfo = nil
+            } else {
+              self.jobsInfo = objects!
+//              let title = self.jobsInfo![0]["jobTitle"]
+//              print(title!)
+              
+            }
+          } // end of block 2
+          
+        } // end of for
       }
       
-    }
-    if self.employers?.count > 0 {
       
-      for var i = 0; i < employers?.count; i++ {
-        print("Getting job from employer: \(i)")
-        let employer = self.employers![i]
-        let query = PFQuery(className: "JobInfo")
-        query.orderByAscending("createdAt")
-        query.whereKey("employers", equalTo: employer)
-        
-        
-        query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
-          if let error = error {
-            let errorStr = error.userInfo["error"] as? String
-            print("Error: \(errorStr) ")
-            self.jobsInfo = nil
-          } else {
-            self.jobsInfo = objects
-            let title = self.jobsInfo![0]["jobTitle"]
-            print(title!)
-            
-          }
-        }
-        
-      }
-    }    
+    } // end of block 1
+    
     return jobsInfo
   }
   

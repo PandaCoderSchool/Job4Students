@@ -43,9 +43,11 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
   
   func fetchJobsInformation() {
     jobsList = ParseInterface.sharedInstance.getJobsInformation()
+    
     jobsTableView.reloadData()
     if jobsList?.count != 0 {
       timer.invalidate()
+      print(jobsList)
     }
     
   }
