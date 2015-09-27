@@ -64,7 +64,7 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     let cell = tableView.dequeueReusableCellWithIdentifier("JobCell", forIndexPath: indexPath) as! JobCell
     
     cell.jobTitle.text = jobsList![indexPath.row]["jobTitle"] as? String
-    cell.companyLabel.text  = jobsList![indexPath.row]["companyName"] as? String
+//    cell.companyLabel.text  = jobsList![indexPath.row]["companyName"] as? String
     
     let dateFormatter = NSDateFormatter()
     dateFormatter.dateFormat = "dd'/'MM'/'yyyy"
@@ -74,10 +74,10 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     cell.salaryLabel.text = jobsList![indexPath.row]["salary"] as? String
     
     // MARK: Load image
-    cell.jobImage.image = nil
-    let photoUrl = NSURL(string: (jobsList![indexPath.row]["photoURL"] as? String)!)
-    print(photoUrl)
-    cell.jobImage.setImageWithURL(photoUrl!)
+//    cell.jobImage.image = nil
+//    let photoUrl = NSURL(string: (jobsList![indexPath.row]["photoURL"] as? String)!)
+//    print(photoUrl)
+//    cell.jobImage.setImageWithURL(photoUrl!)
     
     return cell
   }

@@ -19,9 +19,8 @@ class ParseInterface: NSObject {
   let defaultUserName = "panda"
   let defaultPassword = "panda"
   
-  var jobsInfo : [PFObject]?// = [PFObject]()
-  var employers: [PFObject]?
-//  var jobInfo : PFObject?
+  var jobsInfo  = [PFObject]?()
+  var employers = [PFObject]?()
   // sharedInstance to be used in other classes
   
   class var sharedInstance: ParseInterface {
@@ -33,8 +32,6 @@ class ParseInterface: NSObject {
   
   override init() {
     super.init()
-    jobsInfo = [PFObject]()
-//    jobInfo = PFObject()
     
   }
   
@@ -48,62 +45,41 @@ class ParseInterface: NSObject {
   
   func getJobsInformation() -> [PFObject]? {
     
-    // Get Employer information
-    
-//    let employerQuery = PFQuery(className: "Employer")
-//    employerQuery.orderByAscending("createdAt")
-//    
-//    employerQuery.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
-//      if let error = error {
-//        let errorStr = error.userInfo["error"] as? String
-//        print("Error: \(errorStr) ")
-////        self.employers = nil
-//        
-//      } else {
-//        print("Get Employer list successfull")
-////        self.employers = objects
-//        for object in objects! {
-////          let employerId = object.objectId
-//              let query = PFQuery(className: "JobInfo")
-//              query.orderByAscending("createdAt")
-//          
-//          query.getObjectInBackgroundWithId(object.objectId!, block: { (jobList: PFObject?, err: NSError?) -> Void in
-//            //
-//            if err == nil {
-//              self.jobInfo = jobList!
-//              let jobTitle = self.jobInfo!["jobTitle"] as! String
-//              print(">> Get Job Title: \(jobTitle)")
-//              self.jobsInfo?.append(self.jobInfo!)
-//            }
-//          })
-//
-//        }
-//        
-//      }
-//    }
-
-    
-    
-    
-    
-    // Get Job Information
-    
-    let query = PFQuery(className: "JobInfo")
-    
-    query.orderByAscending("createdAt")
-    
-    
-    query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
-      if let error = error {
-        let errorStr = error.userInfo["error"] as? String
-        print("Error: \(errorStr) ")
-        self.jobsInfo = nil
+    let qr = PFQuery(className: "Employer")
+    qr.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+      if error == nil {
+        self.employers = objects
+        print("Got employers: \(self.employers!.count)")
       } else {
-        self.jobsInfo = objects
-//        let jobTitle = self.jobsInfo![0]["jobTitle"] as! String
-//        print(">> Get Job Title: \(jobTitle), No. of Jobs: \(self.jobsInfo!.count)")
+        self.employers = nil
       }
+      
     }
+    if self.employers?.count > 0 {
+      
+      for var i = 0; i < employers?.count; i++ {
+        print("Getting job from employer: \(i)")
+        let employer = self.employers![i]
+        let query = PFQuery(className: "JobInfo")
+        query.orderByAscending("createdAt")
+        query.whereKey("employers", equalTo: employer)
+        
+        
+        query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+          if let error = error {
+            let errorStr = error.userInfo["error"] as? String
+            print("Error: \(errorStr) ")
+            self.jobsInfo = nil
+          } else {
+            self.jobsInfo = objects
+            let title = self.jobsInfo![0]["jobTitle"]
+            print(title!)
+            
+          }
+        }
+        
+      }
+    }    
     return jobsInfo
   }
   
