@@ -20,7 +20,8 @@ class ParseInterface: NSObject {
   let defaultPassword = "panda"
   
   var jobsInfo : [PFObject]?// = [PFObject]()
-  var employers: [PFObject]? 
+  var employers: [PFObject]?
+  var jobInfo : PFObject?
   // sharedInstance to be used in other classes
   
   class var sharedInstance: ParseInterface {
@@ -33,6 +34,8 @@ class ParseInterface: NSObject {
   override init() {
     super.init()
     jobsInfo = [PFObject]()
+    jobInfo = PFObject()
+    
   }
   
   // This will be call in AppDelegate to setup Parse Application
@@ -45,9 +48,51 @@ class ParseInterface: NSObject {
   
   func getJobsInformation() -> [PFObject]? {
     
-    let query = PFQuery(className: "JobsInformation")
+    // Get Employer information
+    
+//    let employerQuery = PFQuery(className: "Employer")
+//    employerQuery.orderByAscending("createdAt")
+//    
+//    employerQuery.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+//      if let error = error {
+//        let errorStr = error.userInfo["error"] as? String
+//        print("Error: \(errorStr) ")
+////        self.employers = nil
+//        
+//      } else {
+//        print("Get Employer list successfull")
+////        self.employers = objects
+//        for object in objects! {
+////          let employerId = object.objectId
+//              let query = PFQuery(className: "JobInfo")
+//              query.orderByAscending("createdAt")
+//          
+//          query.getObjectInBackgroundWithId(object.objectId!, block: { (jobList: PFObject?, err: NSError?) -> Void in
+//            //
+//            if err == nil {
+//              self.jobInfo = jobList!
+//              let jobTitle = self.jobInfo!["jobTitle"] as! String
+//              print(">> Get Job Title: \(jobTitle)")
+//              self.jobsInfo?.append(self.jobInfo!)
+//            }
+//          })
+//
+//        }
+//        
+//      }
+//    }
+
+    
+    
+    
+    
+    // Get Job Information
+    
+    let query = PFQuery(className: "JobInfo")
     
     query.orderByAscending("createdAt")
+    
+    
     query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
       if let error = error {
         let errorStr = error.userInfo["error"] as? String
@@ -61,6 +106,8 @@ class ParseInterface: NSObject {
     }
     return jobsInfo
   }
+  
+  
   
   func parseSignUp(userName: NSString?, userPass: NSString?) -> Bool{
     let user = PFUser()
