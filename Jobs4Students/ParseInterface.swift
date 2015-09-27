@@ -19,8 +19,9 @@ class ParseInterface: NSObject {
   let defaultUserName = "panda"
   let defaultPassword = "panda"
   
-  var jobsInfo: [PFObject]?
-  var employers = [PFObject]?()
+  var jobsInfo  : [PFObject]?
+  var employers : [PFObject]?
+  
   // sharedInstance to be used in other classes
   
   class var sharedInstance: ParseInterface {
@@ -33,6 +34,7 @@ class ParseInterface: NSObject {
   override init() {
     super.init()
     jobsInfo = [PFObject]()
+    employers = [PFObject]()
     
   }
   
@@ -45,18 +47,16 @@ class ParseInterface: NSObject {
   // Get Jobs Information from Database, return the PFObject array
   
   func getJobsInformation() -> [PFObject]? {
-    var tempObj = [PFObject]?()
-    let qr = PFQuery(className: "Employer")
-    qr.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+
+    let employerQuery = PFQuery(className: "Employer")
+    employerQuery.orderByAscending("updatedAt")
+    employerQuery.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
       if error == nil {
         self.employers = objects
         for employer in self.employers! {
-          
-//          print("Got employer: \(employer)")
-
-          
+           
           let query = PFQuery(className: "JobInfo")
-          query.orderByAscending("createdAt")
+          query.orderByAscending("updatedAt")
           query.whereKey("employers", equalTo: employer)
           
           query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
@@ -66,8 +66,8 @@ class ParseInterface: NSObject {
               self.jobsInfo = nil
             } else {
               self.jobsInfo = objects!
-//              let title = self.jobsInfo![0]["jobTitle"]
-//              print(title!)
+              let title = self.jobsInfo![0]["jobTitle"]
+              print(title!)
               
             }
           } // end of block 2

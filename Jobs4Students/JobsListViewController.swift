@@ -47,7 +47,6 @@ class JobsListViewController: UIViewController, UITableViewDataSource, UITableVi
     jobsTableView.reloadData()
     if jobsList?.count != 0 {
       timer.invalidate()
-      print(jobsList)
     }
     
   }
