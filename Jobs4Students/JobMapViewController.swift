@@ -34,6 +34,8 @@ class JobMapViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
     locationManager.requestAlwaysAuthorization()
     locationManager.startUpdatingLocation()
+    self.fetchJobsInformation()
+
     
   }
   
@@ -55,7 +57,6 @@ class JobMapViewController: UIViewController, MKMapViewDelegate, CLLocationManag
   func fetchJobsInformation() {
     jobsList = ParseInterface.sharedInstance.getJobsInformation()
     self.updateJobsMap()
-    
     
   }
   
@@ -117,7 +118,6 @@ class JobMapViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
     
     self.map.setRegion(region, animated: false)
-    
     
     updateUserAnnotation(location)
     

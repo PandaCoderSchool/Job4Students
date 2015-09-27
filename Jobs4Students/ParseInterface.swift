@@ -20,6 +20,7 @@ class ParseInterface: NSObject {
   let defaultPassword = "panda"
   
   var jobsInfo : [PFObject]?// = [PFObject]()
+  var employers: [PFObject]? 
   // sharedInstance to be used in other classes
   
   class var sharedInstance: ParseInterface {
