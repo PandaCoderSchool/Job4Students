@@ -5,6 +5,7 @@ target 'Jobs4Students' do
 	pod ‘Parse’
 	pod ‘ParseUI’
 	pod "AFNetworking"
+    pod "DXCustomCallout-ObjC"
 
 end
 

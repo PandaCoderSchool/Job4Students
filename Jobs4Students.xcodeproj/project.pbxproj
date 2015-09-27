@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27230BC373253819844E8AD9 /* libPods-Jobs4Students.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0EB676C224A398C607EFDF /* libPods-Jobs4Students.a */; };
+		84EC5A951BB7E2D5003A9FFC /* JobMapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC5A941BB7E2D5003A9FFC /* JobMapAnnotationView.xib */; settings = {ASSET_TAGS = (); }; };
+		84EC5A991BB7F68F003A9FFC /* JobMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC5A981BB7F68F003A9FFC /* JobMapAnnotationView.swift */; settings = {ASSET_TAGS = (); }; };
 		C546F67A1BAF8EBD00D3926B /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546F6791BAF8EBD00D3926B /* JobCell.swift */; settings = {ASSET_TAGS = (); }; };
 		C546F67C1BAFB69E00D3926B /* Jobs-Graphic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C546F67B1BAFB69E00D3926B /* Jobs-Graphic.jpg */; settings = {ASSET_TAGS = (); }; };
 		C546F67E1BAFBD2100D3926B /* JobDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546F67D1BAFBD2100D3926B /* JobDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		5B0EB676C224A398C607EFDF /* libPods-Jobs4Students.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobs4Students.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EC5A941BB7E2D5003A9FFC /* JobMapAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobMapAnnotationView.xib; sourceTree = "<group>"; };
+		84EC5A981BB7F68F003A9FFC /* JobMapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobMapAnnotationView.swift; sourceTree = "<group>"; };
 		899280228C3654C283C38969 /* Pods-Jobs4Students.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobs4Students.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jobs4Students/Pods-Jobs4Students.debug.xcconfig"; sourceTree = "<group>"; };
 		C1865C8FFF7FF9EE6991040B /* Pods-Jobs4Students.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobs4Students.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jobs4Students/Pods-Jobs4Students.release.xcconfig"; sourceTree = "<group>"; };
 		C546F6791BAF8EBD00D3926B /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				C546F67D1BAFBD2100D3926B /* JobDetailsViewController.swift */,
 				C546F67F1BAFBD4700D3926B /* JobFilterViewController.swift */,
 				C546F6811BAFBD5200D3926B /* JobMapViewController.swift */,
+				84EC5A981BB7F68F003A9FFC /* JobMapAnnotationView.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 				C5618E041BAEF4600083ED90 /* Jobs4Students-Bridging-Header.h */,
 				C59249001BA6C7A300C51658 /* Assets.xcassets */,
 				C59249051BA6C7A300C51658 /* Info.plist */,
+				84EC5A941BB7E2D5003A9FFC /* JobMapAnnotationView.xib */,
 			);
 			path = Jobs4Students;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC5A951BB7E2D5003A9FFC /* JobMapAnnotationView.xib in Resources */,
 				C59249011BA6C7A300C51658 /* Assets.xcassets in Resources */,
 				C59248FF1BA6C7A300C51658 /* Main.storyboard in Resources */,
 				C546F67C1BAFB69E00D3926B /* Jobs-Graphic.jpg in Resources */,
@@ -239,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55C44D81BAF758200BB5D9C /* JobsListViewController.swift in Sources */,
+				84EC5A991BB7F68F003A9FFC /* JobMapAnnotationView.swift in Sources */,
 				C546F67E1BAFBD2100D3926B /* JobDetailsViewController.swift in Sources */,
 				C546F67A1BAF8EBD00D3926B /* JobCell.swift in Sources */,
 				C59248FC1BA6C7A300C51658 /* ViewController.swift in Sources */,

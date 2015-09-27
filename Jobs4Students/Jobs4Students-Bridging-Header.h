@@ -7,3 +7,5 @@
 #import <Bolts.h>
 
 #import "UIImageView+AFNetworking.h"
+#import "DXAnnotationSettings.h"
+#import "DXAnnotationView.h"
