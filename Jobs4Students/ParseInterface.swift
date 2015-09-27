@@ -21,7 +21,7 @@ class ParseInterface: NSObject {
   
   var jobsInfo : [PFObject]?// = [PFObject]()
   var employers: [PFObject]?
-  var jobInfo : PFObject?
+//  var jobInfo : PFObject?
   // sharedInstance to be used in other classes
   
   class var sharedInstance: ParseInterface {
@@ -34,7 +34,7 @@ class ParseInterface: NSObject {
   override init() {
     super.init()
     jobsInfo = [PFObject]()
-    jobInfo = PFObject()
+//    jobInfo = PFObject()
     
   }
   
